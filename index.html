@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sources/lib/codemirror.css">
+    <link rel="stylesheet" href="sources/theme/cobalt.css">
+    <link rel="stylesheet" href="sources/addon/hint/show-hint.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="ide">
+        <div class="editor">
+            <button id="runbtn" onclick="showCode()">Click Here to view OUTPUT</button>
+            <h2>HTML Editor</h2>
+            <textarea id="html" name="html" onchange="showCode()"></textarea>
+            <h2>CSS Editor</h2>
+            <textarea id="css" name="css"></textarea>
+            <h2>JavaScript Editor</h2>
+            <textarea id="javascript" name="javascript"></textarea>
+        </div>
+        <div class="output">
+            <h1 class="otitle">Output</h1>
+            <iframe id="view-result"></iframe>
+        </div>
+    </div>
+    
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.js"></script>
+    <script src="sources/lib/codemirror.js"></script>
+    <script src="sources/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="sources/mode/xml/xml.js"></script>
+    <script src="sources/mode/css/css.js"></script>
+    <script src="sources/mode/javascript/javascript.js"></script>
+    <script src="sources/addon/edit/closetag.js"></script>
+    <script src="sources/addon/edit/closebrackets.js"></script>
+    <script src="sources/addon/dialog/dialog.js"></script>
+    <script src="sources/addon/hint/show-hint.js"></script>
+    <script src="sources/addon/hint/css-hint.js"></script>
+    <script src="sources/addon/hint/html-hint.js"></script>
+    <script src="sources/addon/hint/anyword-hint.js"></script>
+    <script src="sources/addon/hint/xml-hint.js"></script>
+    <script src="sources/addon/hint/javascript-hint.js"></script>
+    <script src="sources/addon/edit/matchtags.js"></script>
+    <script src="sources/addon/edit/continuelist.js"></script>
+    <script src="sources/addon/edit/trailingspace.js"></script>
+    <script src="sources/keymap/sublime.js"></script>
+
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+*{margin: 0; padding: 0;}
+.ide {display: flex; height: 100vh; overflow: hidden;}
+.editor, .output {width: 50%;}
+.editor {overflow: auto;}
+.editor h2 {text-align: center;}
+#view-result{overflow: auto; height: 100%; width: 100%;}
+#runbtn {background-color: orange; color: white; border-radius: 5px; text-align: center; padding: 10px 20px; width: 90%;display: block; color: black; font-weight: bold; margin: 10px auto; cursor: pointer;}
+.otitle {background-color: black; color: orange; text-align: center; padding: 10px 0px;}
+
+@media only screen and (max-width: 992px){
+    .ide {display: block;}
+    .editor, .output {width: 100%;}
+    .editor {overflow: visible;}
+}
